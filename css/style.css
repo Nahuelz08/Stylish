@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face { 
+    font-family: gilroy; src: url('../assets/fonts/Gilroy-Light.otf'); 
+} 
+@font-face { 
+    font-family: gilroy; 
+    font-weight: bold; 
+    src: url('../assets/fonts/Gilroy-ExtraBold.otf'); 
+} 
+body {
+    font-family: gilroy;
+    background-color: rgb(45, 45, 45);
+}
+header {
+    min-height: 100vh;
+    position: relative;
+}
+/* NAV */
+#mainNav {
+    padding-bottom: 1rem;
+    background-color: #212529;
+}
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#mainNav .navbar-brand {
+    color: white;
+    font-family: gilroy;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+    height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-family: gilroy;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+        font-size: 2rem;
+        transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+        height: 2rem;
+        transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        background-color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.5rem;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg,
+    #mainNav.navbar-shrink .navbar-brand img {
+        height: 1.5rem;
+    }
+    #mainNav .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+.navbar-collapse {
+    text-align: center;
+}
+.navbar-brand p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+.navbar-brand p:hover {
+    transform: scale(1.1);
+}
+.nav-item .nav-link {
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+.nav-item .nav-link:hover {
+    transform: scale(1.1);
+}
+/* FIN NAV */
+/* Generales */
+h1, h2, h3, h4 {
+    color: white;
+    font-weight: bold;
+}
+p {
+    color: white;
+}
+.boton__header, .btn-danger {
+    font-weight: bold;
+}
+    /* video home */
+.video__header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+.texto__principal{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.texto__principal--centrado {
+    text-align: center;
+}
+.boton__header {
+    padding-top: 20px;
+}
+.boton_header, .btn-danger {
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+.boton__header .btn-danger:hover {
+    transform: scale(1.1);
+}
+.objetivos__fondo {
+    background: rgb(45,45,45);
+    background: linear-gradient(0deg, rgba(45,45,45,1) 75%, rgb(32, 32, 32) 100%);
+}
+/* Fin generales */
+/* Vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px) {
+    header {
+        min-height: 18.5rem;
+    }
+    .video__header video {
+        width: 100%;
+        top: 12.5rem;
+    }
+    .texto__principal {
+        height: 25rem;
+    }
+    .h1__header {
+        font-size: 1rem;
+    }
+    .h2__header {
+        font-size: 1.25rem;
+    }
+    .boton__header {
+        padding-top: 10px;
+    }
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+/* vista entre desktop y mobile */
+@media only screen and (min-width:768px) and (max-width:1239px){
+    header {
+        min-height: 33.5rem;
+    }
+    .video__header video {
+        width: 100%;
+        top: 20rem;
+    }
+    .texto__principal {
+        padding-bottom: 300px;
+    }
+    .h1__header {
+        font-size: 2rem;
+    }
+    .h2__header {
+        font-size: 2.5rem;
+    }
+}
+
+/*vista desktop */
+@media only screen and (min-width:1240px){
+    p {
+        font-size: 1.2rem;
+    }
+    .h1__header {
+        font-size: 3rem;
+    }
+    .h2__header {
+        font-size: 3.5rem;
+    }
+    .objetivos__icono {
+        font-size: 7rem;
+        color: white;
+        padding-bottom: 1.5rem;
+    }
+    .objetivos__texto--grande {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
