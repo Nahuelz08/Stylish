@@ -327,6 +327,9 @@ p {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+    .servicios--color {
+        padding-bottom: 5rem;
+    }
     .servicios__row {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -350,5 +353,25 @@ p {
     }
     .servicios__col--color {
         padding-top: 13rem;
+    }
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__logo__txt {
+        font-size: 3.5rem;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__logo__txt:hover {
+        transform: scale(1.1);
+    }
+    .footer__logo__txt a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer__logo__txt a:hover {
+        color: rgb(226, 226, 226);
     }
 }
