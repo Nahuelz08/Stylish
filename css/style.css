@@ -14,6 +14,10 @@ body {
     font-family: gilroy;
     background-color: rgb(45, 45, 45);
 }
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
 header {
     min-height: 100vh;
     position: relative;
@@ -146,22 +150,35 @@ p {
 .boton__header .btn-danger:hover {
     transform: scale(1.1);
 }
+.fondo__negro {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+}
 .objetivos__fondo {
     background: rgb(45,45,45);
     background: linear-gradient(0deg, rgba(45,45,45,1) 75%, rgb(32, 32, 32) 100%);
+}
+.objetivos__icono {
+    color: white;
+}
+.objetivos__texto--grande span {
+    color: rgb(254,96,96);
 }
 /* Fin generales */
 /* Vista Mobile */
 @media only screen and (min-width:0px) and (max-width:767px) {
     header {
-        min-height: 18.5rem;
+        min-height: 23.5rem;
     }
     .video__header video {
-        width: 100%;
-        top: 12.5rem;
+        width: 150%;
+        top: 15rem;
     }
     .texto__principal {
-        height: 25rem;
+        height: 30rem;
     }
     .h1__header {
         font-size: 1rem;
@@ -176,14 +193,22 @@ p {
         font-size: 0.8rem;
         padding: 5px;
     }
+    .objetivos__fondo {
+        margin-bottom: 3.125rem;
+    }
     .objetivos__icono {
         font-size: 4rem;
-        color: white;
         padding-bottom: 1.5rem;
     }
     .objetivos__texto--grande {
         font-size: 2rem;
         font-weight: bold;
+    }
+    .linea {
+        border-top: 1px solid white;
+        padding: 1rem;
+        width: 80vw;
+        transform: translate(2.188rem, 0rem);
     }
 }
 /* vista entre desktop y mobile */
@@ -209,7 +234,6 @@ p {
     }
     .objetivos__icono {
         font-size: 5rem;
-        color: white;
         padding-bottom: 1.5rem;
     }
     .objetivos__texto--grande {
@@ -228,9 +252,11 @@ p {
     .h2__header {
         font-size: 3.5rem;
     }
+    .objetivos__fondo {
+        height: 25rem;
+    }
     .objetivos__icono {
         font-size: 6.5rem;
-        color: white;
         padding-bottom: 1.5rem;
     }
     .objetivos__texto--grande {
@@ -242,5 +268,16 @@ p {
         height: 200px;
         padding: 0;
         transform: translateY(-220px);
+    }
+    .servicios {
+        margin-top: 2rem;
+    }
+    .servicios__titulo {
+        font-size: 3rem;
+        margin-right: 6rem;
+    }
+    .servicios__icono {
+        font-size: 3.5rem;
+        color: white;
     }
 }

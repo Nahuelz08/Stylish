@@ -12,6 +12,7 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.jpg" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,20 +38,21 @@
             </div>
         </nav>
         <div class="texto__principal d-flex align-items-center">
+            <div class="fondo__negro"></div>
             <div class="container-fluid">
                 <div class="row">
-                    <h1 class="texto__principal--centrado h1__header">stylish.</h1>
-                    <h2 class="texto__principal--centrado h2__header">Llegó la hora de impulsar tu marca</h2>
-                    <div class="boton__header d-flex justify-content-center ">
+                    <h1 class="texto__principal--centrado h1__header" data-aos="fade-up" data-aos-duration="1200">stylish.</h1>
+                    <h2 class="texto__principal--centrado h2__header" data-aos="fade-up" data-aos-duration="1500">Llegó la hora de impulsar tu marca</h2>
+                    <div class="boton__header d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                         <a href="https://wa.link/cnimlu" target="_blank"><button type="button" class="btn btn-danger btn-lg">CONTACTÁNOS</button></a>
                     </div>
                 </div>
+                <div class="video__header">
+                    <video autoplay muted loop>
+                        <source src="assets/video/file.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-        </div>
-        <div class="video__header">
-            <video autoplay muted loop>
-                <source src="assets/video/file.mp4" type="video/mp4">
-            </video>
         </div>
     </header>
     <div class="container-fluid objetivos__fondo pt-5">
@@ -58,7 +60,7 @@
             <div class="col-lg-4 col-md-4">
                 <div class="objetivos__mision" style="height: 250px;">
                     <i class="fas fa-chart-line objetivos__icono"></i>
-                    <p class="objetivos__texto--grande">Nuestra misión</p>
+                    <p class="objetivos__texto--grande">Nuestra <span>misión</span></p>
                     <p class="objetivos__texto">Ayudar a crear un mapa personalizado <br> hacia el éxito</p>
                 </div>
                 <div class="linea"></div>
@@ -66,7 +68,7 @@
             <div class="col-lg-4 col-md-4">
                 <div class="objetivos__mision">
                     <i class="fas fa-user-tie objetivos__icono"></i>
-                    <p class="objetivos__texto--grande">Nuestro equipo</p>
+                    <p class="objetivos__texto--grande">Nuestro <span>equipo</span></p>
                     <p class="objetivos__texto">Capacitado y profesional 100%</p>
                 </div>
                 <div class="linea"></div>
@@ -74,13 +76,72 @@
             <div class="col-lg-4 col-md-4">
                 <div class="objetivos__mision">
                     <i class="far fa-handshake objetivos__icono"></i>
-                    <p class="objetivos__texto--grande">Nuestro compromiso</p>
+                    <p class="objetivos__texto--grande">Nuestro <span>compromiso</span></p>
                     <p class="objetivos__texto">Generar un lazo de tiempo y <br> confianza para entregar el producto</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Carousel -->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel3.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="d-flex justify-content-center servicios">
+                <h3 class="servicios__titulo">Servicios</h3><i class="fas fa-check-circle servicios__icono"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <p class="servicios__texto">Diseño Gráfico</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="assets/img/servicios1.webp" alt="">
+            </div>
+            <div class="col-lg-2">
+                <p class="servicios__texto">Marketing Digital</p>
+            </div>
+            <div class="col-lg-3">
+                <img src="assets/img/servicios2.webp" alt="">
+            </div>
+            <div class="col-lg-2">
+                <p class="servicios__texto">Branding</p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
