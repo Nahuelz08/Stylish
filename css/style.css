@@ -143,7 +143,7 @@ p {
 .boton__header {
     padding-top: 20px;
 }
-.boton_header, .btn-danger {
+.boton__header, .btn-danger {
     transition-property: transform;
     transition-duration: 0.2s;
 }
@@ -166,6 +166,12 @@ p {
 }
 .objetivos__texto--grande span {
     color: rgb(254,96,96);
+}
+.servicios--color {
+    background-color: rgb(34, 34, 34);
+}
+.servicios__col--color {
+    background-color: rgb(46,39,130);
 }
 /* Fin generales */
 /* Vista Mobile */
@@ -210,6 +216,26 @@ p {
         width: 80vw;
         transform: translate(2.188rem, 0rem);
     }
+    .servicios {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .servicios__titulo {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+    }
+    .servicios__icono {
+        font-size: 3rem;
+        color: white;
+    }
+    .servicios__texto {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .servicios__col--color {
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
 }
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
@@ -239,6 +265,32 @@ p {
     .objetivos__texto--grande {
         font-size: 1.48rem;
         font-weight: bold;
+    }
+    .servicios {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .servicios__titulo {
+        font-size: 2.5rem;
+        margin-right: 2rem;
+    }
+    .servicios__icono {
+        font-size: 3rem;
+        color: white;
+    }
+    .servicios__texto {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .servicios__boton {
+        font-size: 1.5rem
+    }
+    .servicios__img {
+        width: 100%;
+    }
+    .servicios__col--color {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
 /*vista desktop */
@@ -271,6 +323,11 @@ p {
     }
     .servicios {
         margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .servicios__row {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .servicios__titulo {
         font-size: 3rem;
@@ -279,5 +336,17 @@ p {
     .servicios__icono {
         font-size: 3.5rem;
         color: white;
+    }
+    .servicios__texto {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .servicios__boton:hover {
+        background-color: rgb(33, 25, 129);
+        border-color: rgb(28, 21, 105);
+        transform: scale(1.1);
+    }
+    .servicios__col--color {
+        padding-top: 13rem;
     }
 }
