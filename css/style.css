@@ -238,6 +238,83 @@ p {
         padding-top: 1.875rem;
         padding-bottom: 1.875rem;
     }
+    .container__test__mob {
+        height: 570px;
+    }
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__logo__txt {
+        font-size: 3rem;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__logo__txt:hover {
+        transform: scale(1.1);
+    }
+    .footer__logo__txt a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer__logo__txt a:hover {
+        color: rgb(226, 226, 226);
+    }
+    .footer__texto p {
+        font-size: 1.25rem;
+    }
+    .footer__texto p span {
+        color: rgb(254,96,96);
+        font-weight: bold;
+    }
+    .footer__contacto {
+        font-size: 2.5rem;
+    }
+    .footer__boton {
+        font-size: 1.25rem;
+    }
+    .footer__icono {
+        font-size: 3rem;
+        padding-right: 1rem;
+        color: rgb(254,96,96);
+    }
+    .footer__link {
+        display: flex;
+        text-decoration: none;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__link:hover {
+        transform: scale(1.1);
+    }
+    .footer__fondo--color {
+        background: rgb(19,19,19);
+        background: linear-gradient(0deg, rgba(34,34,34,1) 75%, rgba(45,45,45,1) 100%); 
+    }
+    .footer__derecho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .footer__copy {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .footer__copy--fondo {
+        background-color: rgb(19, 19, 19);
+    }
+    .footer__test__tit {
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+    h3 span {
+        color: rgb(254,96,96);
+    }
+    .footer__img {
+        width: 75%;
+    }
 }
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
@@ -294,6 +371,80 @@ p {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+    .container__test__mob {
+        height: 670px;
+    }
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__logo__txt {
+        font-size: 3.5rem;
+        font-weight: bold;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__logo__txt:hover {
+        transform: scale(1.1);
+    }
+    .footer__logo__txt a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer__logo__txt a:hover {
+        color: rgb(226, 226, 226);
+    }
+    .footer__texto p {
+        font-size: 1.5rem;
+    }
+    .footer__texto p span {
+        color: rgb(254,96,96);
+        font-weight: bold;
+    }
+    .footer__boton {
+        font-size: 1.5rem;
+    }
+    .footer__icono {
+        font-size: 3rem;
+        padding-right: 1rem;
+        color: rgb(254,96,96);
+    }
+    .footer__link {
+        display: flex;
+        text-decoration: none;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__link:hover {
+        transform: scale(1.1);
+    }
+    .footer__fondo--color {
+        background: rgb(19,19,19);
+        background: linear-gradient(0deg, rgba(34,34,34,1) 75%, rgba(45,45,45,1) 100%); 
+    }
+    .footer__derecho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    .footer__copy {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .footer__copy--fondo {
+        background-color: rgb(19, 19, 19);
+    }
+    .footer__test__tit {
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+    h3 span {
+        color: rgb(254,96,96);
+    }
+    .footer__img {
+        width: 75%;
+    }
 }
 /*vista desktop */
 @media only screen and (min-width:1240px){
@@ -336,7 +487,7 @@ p {
     }
     .servicios__titulo {
         font-size: 3rem;
-        margin-right: 6rem;
+        margin-right: 2rem;
     }
     .servicios__icono {
         font-size: 3.5rem;
@@ -352,7 +503,7 @@ p {
         transform: scale(1.1);
     }
     .servicios__col--color {
-        padding-top: 13rem;
+        padding-top: 11rem;
     }
     .footer__logo {
         display: flex;
@@ -373,5 +524,53 @@ p {
     }
     .footer__logo__txt a:hover {
         color: rgb(226, 226, 226);
+    }
+    .footer__texto p {
+        font-size: 1.5rem;
+    }
+    .footer__texto p span {
+        color: rgb(254,96,96);
+        font-weight: bold;
+    }
+    .footer__boton {
+        font-size: 1.5rem;
+    }
+    .footer__icono {
+        font-size: 3rem;
+        padding-right: 1rem;
+        color: rgb(254,96,96);
+    }
+    .footer__link {
+        display: flex;
+        text-decoration: none;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+    .footer__link:hover {
+        transform: scale(1.1);
+    }
+    .footer__derecho {
+        padding-left: 6.25rem;
+    }
+    .footer__fondo--color {
+        background: rgb(19,19,19);
+        background: linear-gradient(0deg, rgba(34,34,34,1) 75%, rgba(45,45,45,1) 100%); 
+    }
+    .footer__copy {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .footer__copy--fondo {
+        background-color: rgb(19, 19, 19);
+    }
+    .footer__test__tit {
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+    h3 span {
+        color: rgb(254,96,96);
+    }
+    .footer__img {
+        width: 15%;
     }
 }
