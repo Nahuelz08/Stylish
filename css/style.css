@@ -119,6 +119,9 @@ header {
     color: rgb(254,96,96) !important;
 }
 /* FIN NAV */
+
+
+
 /* Generales */
 h1, h2, h3, h4 {
     color: white;
@@ -197,7 +200,19 @@ p {
 .trabajos__boton {
     box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 75%);
 }
+.modal-content {
+    background-color: #101010;
+}
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+.modal-title {
+    color: white;
+}
 /* Fin generales */
+
+
+
 /* Vista Mobile */
 @media only screen and (min-width:0px) and (max-width:767px) {
     header {
@@ -355,6 +370,9 @@ p {
         width: 80%;
     }
 }
+
+
+
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
     header {
@@ -499,6 +517,9 @@ p {
         margin-bottom: 4rem;
     }
 }
+
+
+
 /*vista desktop */
 @media only screen and (min-width:1240px){
     p {
