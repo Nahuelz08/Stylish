@@ -209,6 +209,30 @@ p {
 .modal-title {
     color: white;
 }
+.trabajos__body {
+    background: linear-gradient(0deg, rgba(45,45,45,1) 30%, rgba(28,28,28,1) 70%);
+}
+.volver__trabajos {
+    color: rgb(254,96,96);
+    transition-duration: 0.5s;
+}
+.volver__trabajos:hover {
+    color: #fff;
+    font-size: 2rem;
+}
+.modal-header__trabajos {
+    justify-content: center;
+}
+.trabajos__dentro__container {
+    margin-bottom: 3.125rem;
+}
+.trabajos__dentro__img {
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.75);
+}
+.row__margin--right {
+    margin-right: 1px;
+}
 /* Fin generales */
 
 
@@ -369,6 +393,16 @@ p {
         margin-bottom: 3rem;
         width: 80%;
     }
+    .trabajos__dentro__img--a {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .trabajos__dentro__img {
+        width: 90%;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 
@@ -516,6 +550,16 @@ p {
         font-size: 1.5rem;
         margin-bottom: 4rem;
     }
+    .trabajos__dentro__img--a {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+    .trabajos__dentro__img {
+        width: 95%;
+        height: 500px;
+        object-fit: cover;
+    }
 }
 
 
@@ -651,17 +695,33 @@ p {
         margin-bottom: 6rem;
     }
     .trabajos__img {
-        width: 75%;
-        height: 500px;
+        width: 55%;
+        height: 380px;
         object-fit: cover;
     }
     .trabajos__boton {
-        width: 75%;
+        width: 55%;
         font-size: 1.5rem;
         transition-property: transform;
         transition-duration: 0.2s;
     }
     .trabajos__boton:hover {
-        transform: scale(1.02);
+        transform: scale(1.05) !important;
+    }
+    .trabajos__dentro__img--a {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        transition-duration: 0.5s;
+    }
+    .trabajos__dentro__img--a:hover {
+        transform: scale(1.05);
+        opacity: 0.5;
+        filter:blur(0.7px);
+    }
+    .trabajos__dentro__img {
+        width: 95%;
+        height: 550px;
+        object-fit: cover;
     }
 }
